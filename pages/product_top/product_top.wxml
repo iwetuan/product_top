@@ -1,0 +1,13 @@
+<!--pages/product_top/product_top.wxml-->
+<!-- <view wx:for="{{loops}}">
+<text class="{{cc}}" bindtap='change'>pages/product_top/product_top.wxml</text>
+</view> -->
+<video id='myvideo' custom-cache="{{false}}" class='image-top' src="{{iphone}}" controls autoplay initial-time='01' show-center-play-btn="{{true}}" objectFit='fill'></video>
+<button type="primary" bindtap='addr'>开始动画</button>
+<swiper class='showdeTail' autoplay='true' interval='2000' indicator-dots='true'>
+<view wx:for="{{imgurl}}">
+<swiper-item>
+<image type="aspectFit" src="{{item}}" />
+</swiper-item>
+</view>
+</swiper>
